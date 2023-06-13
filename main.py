@@ -1,26 +1,28 @@
 hotbar = [
-    "Torcia",
-    "Piccone",
-    "Spada",
-    "Ascia",
-    "Arco",
-    "Secchio d'acqua"
+    "Torch",
+    "Shield",
+    "Sword",
+    "Axe",
+    "Bow",
+    "Bucket of waterr"
 ]
 
 print("Benvenuto giocatore quale oggetto vuoi selezioanre per iniziare la tua avventura?")
 
 print(hotbar)
 
-#! La variabile di input per far sciegliere al giocatore l'elemento
+#! input to let the person pick what they have in their "hotbar"
 x = input()
 
-index = hotbar.index(x) #? Prendo l'indice dell'oggetto selezionato
-item = hotbar.pop(index) #? Tolgo l'oggetto selezionato dalla lista con l'indice, la variabile "item" è l'oggetto 
-hotbar.insert(0,item) #? Riinserisco l'oggetto selezionato all'inizio della lista
+index = hotbar.index(x) #? i take the index of the item he/she selected
+item = hotbar.pop(index) #? i delete the old object inside the list
+hotbar.insert(0,item) #? i place it on the first place of the list making every other move
 
-
-#// Scambia i valori della posizione "x" con quelli in posizione 0
-#// ovvero il primo elemento della "hotbar" con il quarto elemento
+#! This one below is more simple
+#! i take the "x" variable and the first index of "hotbar"
+#! and i switch places 
+#! so the "Sword" switch places with "Torch"
+#! and the others remain the same
 #//hotbar[x], hotbar [0] = hotbar[0], hotbar [x]
 
 print(hotbar)
